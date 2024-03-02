@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 const courses = getData();
 
-const telegram = window.Telegram.WebApps;
+const telegram = window.Telegram.WebApp;
 
 const App = () => {
   const [cartItems, setCartItems] = useState([]);
