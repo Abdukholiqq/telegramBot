@@ -50,7 +50,7 @@ const App = () => {
   return (
     <>
       <h1 className="heading">Abduholiq courses</h1>
-      <Cart cartItems={cartItems} />
+      <Cart cartItems={cartItems} onCheckout={onCheckout} />
       <div className="cards__container">
         {courses.map((course) => (
           <Card
@@ -58,7 +58,6 @@ const App = () => {
             course={course}
             onAddItems={onAddItems}
             onRemoveItem={onRemoveItem}
-            onCheckout={onCheckout}
           />
         ))}
       </div>
