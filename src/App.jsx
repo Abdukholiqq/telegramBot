@@ -52,7 +52,7 @@ const App = () => {
   const onSendData = useCallback(() => {
     const queryID = telegram.initDataUnsafe?.query_id;
     if (queryID) {
-      fetch('http://localhost:8000/web-data',
+      fetch('https://newtelegrambot-137ab60a77bf.herokuapp.com/web-data',
      { method: "POST",
      headers: {
      'Content-Type': 'application/json' },
